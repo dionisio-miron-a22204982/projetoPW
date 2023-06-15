@@ -39,4 +39,5 @@ urlpatterns = [
     path('calculadora/', views.calculadora_view, name="calculadora"),
     path('Main/', views.index_view, name="Main"),
     path('AboutMe/', views.about_me, name="AboutMe"),
+    path('diagram/', views.diagram_view, name="diagram"),
 ]

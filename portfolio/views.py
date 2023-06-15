@@ -56,3 +56,6 @@ def quizz_view(request):
 
 def tourveneza_view(request):
     return render(request, "portfolio/tourVeneza.html")
+
+def diagram_view(request):
+    return render(request, "portfolio/diagram.html")
