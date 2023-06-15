@@ -20,7 +20,7 @@ from portfolio import views
 app_name='portfolio'
 
 urlpatterns = [
-    path('', views.index_view),
+    path('', views.index_view, name="Main"),
     path('Menu/', views.menu_view, name="Menu"),
     path('Licenciatura/', views.Licenciatura_view, name="Licenciatura"),
     path('LEI/', views.LEI_view, name="LEI"),
