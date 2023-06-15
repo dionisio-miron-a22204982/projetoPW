@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
-    <link rel="icon" type="icon" href="Imagens/IconOficial.png">
-    <link rel="stylesheet" href="Grid_Template.css">
+    <title>Meu Layout em CSS</title>
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static '/portfolio/css/aboutmeStyle.css'%}">
 </head>
+<nav>
+    <ul>
+        <li><a href="{% url 'portfolio:Menu' %}">Menu</a></li>
+    </ul>
+</nav>
 
 <body>
-    <div class="grid-container">
-        <div class="header">About me...
-            <Div><p>ola</p></Div>
+    <div class="container">
+        <div class="header">
+            <h1>Dionísio Miron</h1>
         </div>
-        <div class="sidebar">Menu</div>
-        <div class="content">Conteúdo</div>
-        <div class="footer">Dionísio Miron ©, 2023</div>
-    </div>
-</body>
 
+    <div class="personal-info">
+        <h2>Informações Pessoais</h2>
+        <p>Hi, I'm Dionísio, I'm 20 years old and I'm currently studying Computer Engineering and working in a supermarket at the same time. </p>
+            <p>Life is complicated but the effort pays off.</p>
+            <p>With this site I wanted to prove that I'm capable of making websites online, which is incredible!</p>
+            <p>My hobbies are Gym, playing video games, reading books and going for walks.</p>
+    </div>
+
+    <div class="social-media">
+        <h2>Redes Sociais</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/dionisio-miron-2ab644233/">linkedin
+            </a></li>  
+            <li><a href="https://www.instagram.com/dene_animes/">Instagram
+            </a></li>
+
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>Dionísio Miron ©, 2023</p>
+    </div>
+  </div>
+</body>
 </html>
