@@ -1,17 +1,10 @@
 {% extends 'portfolio/base.html' %}
 
 {% block main %}
-    {% for Post in Posts %}
+    {% for post in posts %}
         <p>
-            <span class="info">
-                ({{ Post.criado.day }}/{{ Post.criado.month }})
-            </span>
-            {% if Post.concluido == True %}
-                <del>{{ Post.titulo }}</del>
-            {% else %}
-                {{ Post.titulo }}
-            {% endif %}
-
+            {{ Post.titulo }}
+            
             <a href="{% url 'portfolio:edita' post.id %}" class="btn btn-warning  btn-sm" style="float: right; margin-right: 10px">
                 Editar
             </a>
