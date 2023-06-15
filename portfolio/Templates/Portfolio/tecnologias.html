@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <title>Meu Layout em CSS</title>
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static '/portfolio/css/aboutmeStyle.css'%}">
+</head>
+<nav>
+    <ul>
+        <li><a href="{% url 'portfolio:Menu' %}">Menu</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Technologies Used</h1>
+        </div>
+
+    <div class="personal-info">
+        <p>In this section I will say all the technologies used on this website.</p>
+    </div>
+
+    <div class="hobbies">
+        <ul>
+            <li>
+                <div class="container1">
+                    <img class="image" src="{% static 'portfolio/images/HTML5_logo.png'%}" alt="Imagem">
+                    <div class="description">
+                        <h2>HTML5</h2>
+                        <p>It is the fifth version of the HTML language. This new version brings with it important 
+                        changes regarding the role of HTML in the world of the Web, through new features such as semantics and accessibility.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container1">
+                    <img class="image" src="{% static 'portfolio/images/CSS.png'%}" alt="Imagem">
+                    <div class="description">
+                        <h2>CSS</h2>
+                        <p>CSS is called the Cascading Style Sheet language and is used to style elements written in a markup language like HTML. 
+                        CSS separates content from the visual representation of the site. Think about your page decor.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container1">
+                    <img class="image" src="{% static 'portfolio/images/JavaScript-logo.png'%}" alt="Imagem">
+                    <div class="description">
+                        <h2>JavaScript</h2>
+                        <p>JavaScript is a prototype-based, multi-paradigm, and dynamic language, supporting object-oriented, imperative, and declarative styles (such as functional programming).</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container1">
+                    <img class="image" src="{% static 'portfolio/images/django.png'%}" alt="Imagem">
+                    <div class="description">
+                        <h2>Django</h2>
+                        <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. 
+                            It’s free and open source.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>Dionísio Miron ©, 2023</p>
+    </div>
+  </div>
+</body>
+</html>

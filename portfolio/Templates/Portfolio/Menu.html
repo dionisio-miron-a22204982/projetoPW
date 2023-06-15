@@ -41,12 +41,12 @@
             </button>
             <div class="dropdown-content">
                 <a href="{% url 'portfolio:diagram' %}">Website Map</a>
-                <a href="{% url 'portfolio:diagram' %}">Technologies used</a>
+                <a href="{% url 'portfolio:tecnologias' %}">Technologies used</a>
             </div>
         </div>
         <a href="{% url 'portfolio:calculadora' %}">Calculator</a>
         <a href="Calculadora.html">Blog</a>
-        <a href="Calculadora.html">Contact</a>
+        <a href="{% url 'portfolio:contacts' %}">Contact</a>
     </nav>
 
 </body>

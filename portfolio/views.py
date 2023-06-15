@@ -1,5 +1,8 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import redirect, render
+from django.urls import reverse
+from .models import Post
+from .forms import PostForm
 
 # Create your views here.
 
@@ -59,3 +62,40 @@ def tourveneza_view(request):
 
 def diagram_view(request):
     return render(request, "portfolio/diagram.html")
+
+def tecnologias_view(request):
+    return render(request, "portfolio/tecnologias.html")
+
+def contacts_view(request):
+    return render(request, "portfolio/contacts.html")
+
+
+
+def home_page_view(request):
+    context = {'Post': Post.objects.all()}
+    return render(request, 'portfolio/home.html', context)
+
+def novo_post_view(request):
+    form = PostForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('portfolio:home')
+
+    context = {'form': form}
+
+    return render(request, 'portfolio/nova.html', context)
+
+def edita_post_view(request, post_id):
+    post = post.objects.get(id=post_id)
+    form = PostForm(request.POST or None, instance=post)
+
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('post:home'))
+
+    context = {'form': form, 'post_id': post_id}
+    return render(request, 'portfolio/edita.html', context)
+
+def apaga_post_view(request, post_id):
+    Post.objects.get(id=post_id).delete()
+    return HttpResponseRedirect(reverse('portfolio:home'))

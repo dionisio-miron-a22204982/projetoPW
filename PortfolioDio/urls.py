@@ -20,5 +20,5 @@ import portfolio
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("portfolio.urls")),
+    path('', include('portfolio.urls')),
 ]

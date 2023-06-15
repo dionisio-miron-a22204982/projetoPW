@@ -39,4 +39,10 @@ urlpatterns = [
     path('calculadora', views.calculadora_view, name="calculadora"),
     path('AboutMe', views.about_me, name="AboutMe"),
     path('diagram', views.diagram_view, name="diagram"),
+    path('tecnologias', views.tecnologias_view, name="tecnologias"),
+    path('contacts', views.contacts_view, name="contacts"),
+    path('home',views.home_page_view, name='home'),
+    path('nova', views.novo_post_view, name='nova'),
+    path('edita/<int:post_id>', views.edita_post_view, name='edita'),
+    path('apaga/<int:post_id>', views.apaga_post_view, name='apaga'),
 ]
