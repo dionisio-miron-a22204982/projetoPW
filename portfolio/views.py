@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def index_view(request):
+def main_view(request):
     return render(request, "portfolio/Main.html")
 
 def menu_view(request):
