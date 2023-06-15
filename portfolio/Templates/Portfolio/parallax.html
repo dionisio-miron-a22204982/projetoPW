@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/parallaxStyle.css'%}">
+</head>
+
+<header>
+    <title>Parallax</title>
+    <nav>
+        <ul>
+            <li><a href="{% url 'portfolio:indexlab4' %}">🏡Home</a></li> |
+            <li><a href="{% url 'portfolio:animations' %}">🐋Animations</a></li> |
+            <li><a href="{% url 'portfolio:tourVeneza' %}">✈️Tour</a></li> |
+            <li><a href="{% url 'portfolio:imagemReponsiva' %}">🕊️Imagem</a></li> 
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div>
+        <div>
+            <h1>Parallax</h1>
+            <p> Faça Scroll Up e Down desta página para ver o efeito scrolling parallax.
+            </p>
+            <p>Através deste site consegue visualizar o famoso efeito do Parallax, muito
+                invulgar e espetacular!
+            </p>
+        </div>
+
+        <div class="parallax"></div>
+
+        <div class="parallax1"></div>
+
+        <div class="parallax"></div>
+
+        <div class="parallax2"></div>
+
+        <div class="parallax"></div>
+
+        <div class="parallax3"></div>
+    </div>
+</body>
+<footer><b>
+        <p class="author">Dionísio Miron | a22204982 | Universidade Lusófona © 2023</p>
+    </b></footer>
+
+</html>

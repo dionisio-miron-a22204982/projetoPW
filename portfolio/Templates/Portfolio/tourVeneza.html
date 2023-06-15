@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tour</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/tourVenezaStyle.css'%}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'portfolio:indexlab4' %}">🏡Home</a></li> |
+                <li><a href="{% url 'portfolio:animations' %}">🐋Animations</a></li> |
+                <li><a href="{% url 'portfolio:imagemReponsiva' %}">🕊️Imagem</a></li> |
+                <li><a href="{% url 'portfolio:parallax' %}">🛹Parallax</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="video-background">
+        <div class="video-foreground">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HDpX9dnJHmk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Veneza</h1>
+        <p>Uma bela vista através de um drone da bela cidade de Veneza.</p>
+        <p></p>
+        <p>Dionísio Miron | a22204982 | Universidade Lusófona © 2023</p>
+    </div>
+</body>
+
+</html>

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*bkbvv2462rs2-^zd&nmqe=%fx@f2)+x2@!l+60j#+dlek64%i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Dionisio.pythonanywhere.com']
+ALLOWED_HOSTS = ['Dionisio.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'portfolio',
 ]
 
 MIDDLEWARE = [
@@ -125,6 +126,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
 MEDIA_ROOT = '/home/Dionisio/PortfolioDio/media'
-MEDIA_URL = '/media/'
+MEDIA_URL = ''
 STATIC_ROOT = '/home/Dionisio/PortfolioDio/static'
-STATIC_URL = '/static/'
+STATIC_URL = '/static/portfolio/'

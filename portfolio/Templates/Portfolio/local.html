@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static '/portfolio/css/estilos.css'%}">
+</head>
+
+<body>
+    <header>
+        <title>Localização</title>
+        <nav>
+            <ul>
+                <li><a href="{% url 'portfolio:indexlab4' %}">🏡Home</a></li> |
+                <li><a href="{% url 'portfolio:multimedia' %}">📸Multimedia</a></li> |
+                <li><a href="{% url 'portfolio:info' %}">💁‍♂️Informação</a></li> |
+                <li><a href="{% url 'portfolio:quizz' %}">📜Quizz</a></li> |
+                <li><a href="{% url 'portfolio:html5-css' %}">💿HTML5 e CSS</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Localização no google maps</h1>
+            <p>Veneza está situada no continete Europeu, no nordeste da Itália.</p>
+        </section>
+        <section>
+            <figure><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31667.48618951654!2d12.28751885363714!3d45.44891497785716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1daf1d63d89%3A0x7ba3c6f0bd92102f!2zVmVuZXphLCBJdMOhbGlh!5e0!3m2!1spt-PT!2spt!4v1676368135959!5m2!1spt-PT!2spt"
+                    width="800" height="700" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+        </section>
+    </main>
+    <footer><b><p class="author">Dionísio Miron | a22204982 | Universidade Lusófona © 2023</p></b></footer>
+</body>
+</html>

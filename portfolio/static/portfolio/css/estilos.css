@@ -1,0 +1,120 @@
+body {
+    background-color: antiquewhite;
+    font-size: 14pt;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: crimson;
+}
+
+h2 {
+    color: green;
+}
+
+h3 {
+    color: black;
+}
+
+#unico {
+    font-family: fantasy;
+}
+
+.cidade {
+    font-size: 13;
+    font-weight: bold;
+}
+
+.cidade2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-style: italic;
+}
+
+.author {
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+div:hover {
+    background-color: red;
+}
+
+p::first-letter {
+    font-size: 2em;
+}
+
+div p {
+    font: optional;
+}
+
+div>p {
+    font-size: large;
+}
+
+div~p {
+    font-style: oblique;
+}
+
+div+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div,
+p {
+    color: red;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: white;
+}
+
+a:hover:after {
+    content: 🤤;
+}
+
+header {
+    background-color: black;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #fff;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: black;
+}

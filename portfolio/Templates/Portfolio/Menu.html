@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static '/portfolio/css/MenuDesign.css'%}">
+</head>
+
+<body>
+    <nav>
+        <a href="{% url 'portfolio:Menu' %}">Home</a>
+        <a href="{% url 'portfolio:Licenciatura' %}">Education</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                About Me
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="{% url 'portfolio:LEI' %}">Degree in Computer Engineering</a>
+                <a href="">About my self</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Projects
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="{% url 'portfolio:indexlab4' %}">Web Programming</a>
+            </div>
+        </div>
+        <a href="Calculadora.html">Calculator</a>
+        <a href="Calculadora.html">Calculator</a>
+    </nav>
+
+</body>
+<div id="imagens-container">
+    <img src="{% static 'portfolio/images/IconOficial.png'%}" style="display: inline-block; width: 50%;">
+    <img src="{% static 'portfolio/images/Welcome.png'%}" style="display: inline-block; width: 45%; ">
+</div>
+<footer>
+    <p>Dionísio Miron ©, 2023</p>
+    <a href="https://www.linkedin.com/in/dionisio-miron-2ab644233/">
+		<div class="icon icon-linkedin"></div>
+	</a>
+	<a href="https://github.com/dionisio-miron-a22204982">
+		<div class="icon icon-github"></div>
+	</a>
+</footer>
+
+</html>

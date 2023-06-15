@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex and Grid</title>
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/beachStyle.css'%}">
+</head>
+<style>
+    img {
+        position: relative;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <header class="cabeça">
+        <h1>Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'portfolio:indexlab4' %}">🏡Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="flex-container">
+            <p>Viajar para o Hawaii</p>
+            <p>🌏</p>
+        </div>
+        <div style="position: relative; width: 100%;">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80.jpg"
+                alt="beach">
+            <p
+                style="position: absolute; top: 20%; left: 20%; transform: translate(-50%, -50%); z-index: 1; color: black; font-size: 24px;">
+                Vamos à praia!</p>
+        </div>
+        <div class="capitais">
+            <div class="bruxelas">
+                <div class="bruxelasImage">
+                    <img src="{% static 'portfolio/images/bruxelas.avif'%}" alt="Imagem de Bruxelas">
+                </div>
+                <div class="bruxelasName">
+                    <p>Bruxelas</p>
+                </div>
+            </div>
+            <div class="budapeste">
+                <div class="budapesteImage">
+                    <img src="{% static 'portfolio/images/budapeste.avif'%}" alt="Imagem de Budapeste">
+                </div>
+                <div class="budapesteName">
+                    <p>Budapeste</p>
+                </div>
+            </div>
+            <div class="lisboa">
+                <div class="lisboaImage">
+                    <img src="{% static 'portfolio/images/lisboa.avif'%}" alt="Imagem de Lisboa">
+                </div>
+                <div class="lisboaName">
+                    <p>Lisboa</p>
+                </div>
+            </div>
+            <div class="londres">
+                <div class="londresImage">
+                    <img src="{% static 'portfolio/images/londres.avif'%}" alt="Imagem de Londres">
+                </div>
+                <div class="londresName">
+                    <p>Londres</p>
+                </div>
+            </div>
+            <div class="milao">
+                <div class="milaoImage">
+                    <img src="{% static 'portfolio/images/milao.avif'%}" alt="Imagem de Milao">
+                </div>
+                <div class="milaoName">
+                    <p>Milao</p>
+                </div>
+            </div>
+            <div class="paris">
+                <div class="parisImage">
+                    <img src="{% static 'portfolio/images/paris.avif'%}" alt="Imagem de Paris">
+                </div>
+                <div class="parisName">
+                    <p>Lisboa</p>
+                </div>
+            </div>
+            <div class="praga">
+                <div class="pragaImage">
+                    <img src="{% static 'portfolio/images/praga.avif'%}" alt="Imagem de praga">
+                </div>
+                <div class="pragaName">
+                    <p>Praga</p>
+                </div>
+            </div>
+            <div class="reykiavik">
+                <div class="reykiavikImage">
+                    <img src="{% static 'portfolio/images/reykiavik.avif'%}" alt="Imagem de Reykiavik">
+                </div>
+                <div class="reykiavikName">
+                    <p>Reykiavik</p>
+                </div>
+            </div>
+            <div class="roma">
+                <div class="romaImage">
+                    <img src="{% static 'portfolio/images/roma.avif'%}" alt="Imagem de roma">
+                </div>
+                <div class="romaName">
+                    <p>Roma</p>
+                </div>
+            </div>
+            <div class="varsovia">
+                <div class="varsoviaImage">
+                    <img src="{% static 'portfolio/images/varsovia.avif'%}" alt="Imagem de Varsovia">
+                </div>
+                <div class="varsoviaName">
+                    <p>Varsovia</p>
+                </div>
+            </div>
+            <div class="Viena">
+                <div class="vienaImage">
+                    <img src="{% static 'portfolio/images/viena.avif'%}" alt="Imagem de viena">
+                </div>
+                <div class="vienaName">
+                    <p>Viena</p>
+                </div>
+            </div>
+        </div>
+        <div class="circuloContainer">
+            <div class="circulo">A</div>
+            <div class="circulo">B</div>
+            <div class="circulo">C</div>
+            <div class="circulo">D</div>
+
+            <img class="clip_imagem" src="{% static 'portfolio/images/milao.avif'%}" alt="milao">
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+  }
+.balloon {
+    width: 50px;
+    height: 70px;
+    background-color: #f5a623;
+    border-radius: 50% 50% 60% 60%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: balloon-anim;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes balloon-anim {
+    0% {
+      transform: translate(-50%, 0) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -200%) scale(1.2);
+    }
+    100% {
+      transform: translate(-50%, -400%) scale(1);
+    }
+  }
+
+  .fade-in {
+    width: 100px;
+    height: 100px;
+    background-color: #9b4dca;
+    opacity: 0;
+    position: relative;
+    animation-name: fade-in-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fade-in-anim {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+  }
+
+  .clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #f5a623;
+    position: relative;
+    animation-name: clock-anim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .clock::before {
+    content: "";
+    width: 8px;
+    height: 80px;
+    background: #000;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+  }
+  
+  @keyframes clock-anim {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .color-change {
+    width: 200px;
+    height: 200px;
+    background-color: #f5a623;
+    position: relative;
+    animation-name: color-change-anim;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes color-change-anim {
+    0% {
+      background-color: #f5a623;
+    }
+    50% {
+      background-color: #9b4dca;
+    }
+    100% {
+      background-color: #2ecc71;
+    }
+  }
+
+  svg rect {
+    transform: scale(0);
+    animation: rect-anim 1s ease-in-out forwards;
+  }
+  
+  svg circle {
+    transform: scale(0);
+    animation: circle-anim 1s ease-in-out forwards 0.5s;
+  }
+  
+  svg polygon {
+    transform: scale(0);
+    animation: polygon-anim 1s ease-in-out forwards 1s;
+  }
+  
+  @keyframes rect-anim {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes circle-anim {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes polygon-anim {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #fff;
+    background: black;
+    top: 0;
+    background-color: black;
+  }
+  
+  nav li {
+    margin: 0 10px;
+    background: black;
+  }
+  
+  nav a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .author {
+    background-color: black;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static '/portfolio/css/estilos.css'%}">
+</head>
+
+<body>
+    <header>
+        <title>HTML5 e CSS</title>
+        <nav>
+            <ul>
+                <li><a href="{% url 'portfolio:indexlab4' %}">🏡Home</a></li> |
+                <li><a href="{% url 'portfolio:local' %}">🗺️Localização</a></li> |
+                <li><a href="{% url 'portfolio:multimedia' %}">📸Multimedia</a></li> |
+                <li><a href="{% url 'portfolio:info' %}">💁‍♂️Informação</a></li> |
+                <li><a href="{% url 'portfolio:quizz' %}">📜Quizz</a></li> |
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>HTML5 e CSS</h3>
+            <p>O HTML5 é a nova versão do HTML4 e um dos seus principais objetivos é facilitar a manipulação dos
+                elementos, possibilitando o desenvolvedor modificar as características dos objetos de forma não
+                intrusiva, fazendo com que isso fique transparente para o usuário final.</p>
+            <table border="1">
+                <tr>
+                    <td><b>header</b></td>
+                    <td>✔</td>
+                    <td>Indica o cabeçalho, utilizei em todas as páginas.</td>
+                </tr>
+                <tr>
+                    <td><b>nav</b></td>
+                    <td>✔</td>
+                    <td>Indica menu de navegação, utilizei em quase todas as páginas facilitando a navegação
+                        do usuário.
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>main</b></td>
+                    <td>✔</td>
+                    <td>Indica conteúdo principal e
+                        único, utilizei em todas as páginas pois torna o a estuturação mais fácil.</td>
+                </tr>
+                <tr>
+                    <td><b>article</b></td>
+                    <td>✔</td>
+                    <td>Indica porção do
+                        documento que pode ser vista de forma independente,não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>section</b></td>
+                    <td>✔</td>
+                    <td>Especifica uma parte do conteúdo, utilizei em todas as páginas.</td>
+                </tr>
+                <tr>
+                    <td><b>aside</b></td>
+                    <td>✔</td>
+                    <td>Indica anotações, publicidade ou outros assuntos
+                        desconexos, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>footer</b></td>
+                    <td>✔</td>
+                    <td>Indica rodapé da secção (com copyright), utilizei em todas as páginas.</td>
+                </tr>
+                <tr>
+                    <td><b>details</b></td>
+                    <td>✔</td>
+                    <td>Define detalhes adicionais que o utilizador
+                        pode ver ou esconder, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>meter</b></td>
+                    <td>✔</td>
+                    <td>Define uma medida escalar estática dentro de um
+                        intervalo, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>progress</b></td>
+                    <td>✔</td>
+                    <td>Define uma barra de progresso de uma tarefa, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>abbr</b></td>
+                    <td>✔</td>
+                    <td>Indica o significado de uma abreviatura em conjunto
+                        com o atributo title, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>address</b></td>
+                    <td>✔</td>
+                    <td>Informação sobre o contacto do autor, não utilizei.</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <p>O CSS surge para separar o conteúdo da sua aparência.</p>
+            <table border="1">
+                <tr>
+                    <td><b>universal</b></td>
+                    <td>✔</td>
+                    <td>O seletor universal (*) aplica o estilo a todos os elementos da
+                        página, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>tipo</b></td>
+                    <td>✔</td>
+                    <td>O seletor de tipo usa o nome do marcador a estilizar, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>class</b></td>
+                    <td>✔</td>
+                    <td>O seletor de classe associa um nome a um estilo, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>id</b></td>
+                    <td>✔</td>
+                    <td>O atributo id permite identificar univocamente um elemento
+                        do HTML (muito útil no JavaScript), não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>atributo</b></td>
+                    <td>✔</td>
+                    <td>• Seletores que se aplicam a atributos de elementos, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>pseudo-classe</b></td>
+                    <td>✔</td>
+                    <td>Seletor associado ao estado de um elemento, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>pseudo-elemento</b></td>
+                    <td>✔</td>
+                    <td>Seleciona os "char's" de uma palavra que queiramos alterar, não utilizei.</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <p>Em CSS, os seletores são usados para direcionar os elementos HTML em nossas páginas da web que queremos
+                estilizar. Há uma grande variedade de seletores CSS disponíveis, permitindo uma precisão refinada ao
+                selecionar os elementos a serem estilizados.</p>
+            <table border="1">
+                <tr>
+                    <td><b>Seletores descendentes</b></td>
+                    <td>✔</td>
+                    <td>Seleciona todos os elementos descendentes de um certo elemento P.e. "Div", não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>Seletores filhos</b></td>
+                    <td>✔</td>
+                    <td>O seletor filho (>) seleciona todos os elementos que são filhos de um elemento especificado, não
+                        utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>Seletores adjacentes</b></td>
+                    <td>🙄</td>
+                    <td>O seletor geral de irmãos (~) seleciona todos os elementos que são os próximos irmãos de um
+                        elemento especificado, não utilizei.</td>
+                </tr>
+                <tr>
+                    <td><b>Seletores imediatamente adjacentes</b></td>
+                    <td>🙄</td>
+                    <td>O seletor + é usado para selecionar um elemento que está logo após outro elemento específico,
+                        não utilizei.</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer><b>
+            <p class="author">Dionísio Miron | a22204982 | Universidade Lusófona © 2023</p>
+        </b></footer>
+</body>
+
+</html>

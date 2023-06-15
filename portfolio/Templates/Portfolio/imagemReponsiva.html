@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/imagemReponsivaStyle.css'%}">
+</head>
+<header>
+    <title>imagemReponsiva</title>
+    <nav>
+        <ul>
+            <li><a href="{% url 'portfolio:indexlab4' %}">🏡Home</a></li> |
+            <li><a href="{% url 'portfolio:animations' %}">🐋Animations</a></li> |
+            <li><a href="{% url 'portfolio:tourVeneza' %}">✈️Tour</a></li> |
+            <li><a href="{% url 'portfolio:parallax' %}">🛹Parallax</a></li> 
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <picture>
+        <source media="(max-width: 600px)" srcset="{% static 'portfolio/images/iconVeneza.jpg'%}">
+        <source media="(max-width: 900px)" srcset="{% static 'portfolio/images/ponte.jpg'%}">
+        <img src="{% static 'portfolio/images/canoa.jpg'%}" alt="Imagem responsiva">
+    </picture>
+    <div class="author">
+        <b>
+            <p>Dionísio Miron | a22204982 | Universidade Lusófona © 2023</p>
+        </b>
+    </div>
+</body>
+
+</html>

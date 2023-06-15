@@ -1,0 +1,105 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: dodgerblue;
+}
+
+.fraseHawaii {
+    position: relative;
+    top: auto;
+    left: auto;
+}
+
+.capitais div {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.capitais div img {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.capitais div p {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.circulo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.circulo img {
+    position: absolute;
+    clip: rect(0px, 50px, 100px, 0px);
+    z-index: -1;
+}
+
+.cabeça {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    color: black;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #ccc;
+    font-weight: bold;
+}

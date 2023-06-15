@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="icon" href="Imagens/IconOficial.png">
+    <link rel="stylesheet" href="CalculatorStyle.css">
+</head>
+<script>
+    function calculate() {
+        const expression = document.getElementById("expression").value;
+        const result = eval(expression);
+        document.getElementById("result").innerHTML = result;
+    }
+
+    function clearResult() {
+        document.getElementById("result").innerHTML = "";
+    }
+</script>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="expression" placeholder="Digite a expressão">
+        <button onclick="calculate()">Calcular</button>
+        <button onclick="clearResult()">Limpar</button>
+        <div id="result"></div>
+    </div>
+</body>
+
+</html>

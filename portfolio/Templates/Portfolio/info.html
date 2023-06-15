@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static '/portfolio/css/estilos.css'%}">
+</head>
+
+<header>
+    <title>Informação</title>
+    <nav>
+        <ul>
+            <li><a href="{% url 'portfolio:indexlab4' %}">🏡Home</a></li> |
+            <li><a href="{% url 'portfolio:local' %}">🗺️Localização</a></li> |
+            <li><a href="{% url 'portfolio:multimedia' %}">📸Multimedia</a></li> |
+            <li><a href="{% url 'portfolio:quizz' %}">📜Quizz</a></li> |
+            <li><a href="{% url 'portfolio:html5-css' %}">💿HTML5 e CSS</a></li> 
+        </ul>
+    </nav>
+</header>
+<body>
+    <main>
+        <h1>Vamos conhecer Veneza!</h1>
+        <section>
+            <h3>Um pouco sobre Veneza</h3>
+            <p> Ela está localizada na pantanosa Lagoa de Veneza, que se estende ao longo da costa entre as bocas dos
+                rios Po e
+                Piave.
+                Veneza é famosa pela beleza de sua arquitetura e obras de arte. Uma parte da cidade está listada como um
+                Patrimônio Mundial, juntamente com a sua lagoa.</p>
+            <p> Veneza é a capital da região de Veneto. Em 2009, havia 270 098 habitantes na comuna de Veneza (a
+                estimativa de
+                população de 272 mil habitantes inclui a população de toda a comuna de Veneza) dos quais cerca de 60 mil
+                vivem na cidade histórica de Veneza. </p>
+            <p>O nome é derivado do antigo povo veneti, que habitou a região até o século X a.C. A cidade foi a capital
+                da
+                histórica República de Veneza e é conhecida como o "La Dominante", "Serenissima", "Rainha do Adriático",
+                "Cidade
+                da Água", "Cidade Flutuante" e "Cidade dos Canais". </p>
+            <figure><img src="{% static 'portfolio/images/veneza_Baia.jpg'%}" alt="Veneza Antiga"></figure>
+        </section>
+        <section>
+            <h3>História</h3>
+            <p>Começando em 166-168, os Quados e os Marcomanos destruíram a atual Oderzo. As defesas romanas foram
+                derrubadas no
+                início do século V pelos Visigodos e, cerca de 50 anos depois, pelos hunos liderados por Átila. </p>
+            <p>A mais duradoura invasão foi a dos lombardos em 568. A leste, o Império Bizantino estava estabelecendo
+                domínios
+                na região do atual Vêneto e as principais entidades administrativas e religiosas do império na Península
+                Itálica
+                foram transferidas para este domínio.</p>
+            <p>Foram construídos novos portos, incluindo Malamoco e Torcello na lagoa de Veneza.</p>
+            <figure><img src="{% static 'portfolio/images/veneza_canaletto.jpg'%}" alt="Veneza Antiga"></figure>
+        </section>
+    </main>
+    <footer><b>
+            <p class="author">Dionísio Miron | a22204982 | Universidade Lusófona © 2023</p>
+        </b></footer>
+</body>
+
+</html>

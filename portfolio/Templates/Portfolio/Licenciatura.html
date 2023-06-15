@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+  <link rel="stylesheet" href="{% static '/portfolio/Educacao.css'%}">
+</head>
+
+<body>
+  <header>
+    <div style="text-align: left"><a href="{% url 'portfolio:Menu' %}">Go back 😀</a></div>
+    <h1>My Education and Skills</h1>
+  </header>
+  <section>
+    <h2>Educação</h2>
+    <p>I started studing in 2009 at Escola Pintor Almada Negreiros, I studied at secondary school in Camarate from 2016 to 2020, then i start to work and finally
+  I got into university.
+    </p>
+  </section>
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>
+        HTML
+        <div class="progress-bar">
+          <span>80%</span>
+        </div>
+      </li>
+      <li>
+        C
+        <div class="progress-bar2">
+          <span>60%</span>
+        </div>
+      </li>
+      <li>
+        JAVA
+        <div class="progress-bar3">
+          <span>70%</span>
+        </div>
+      </li>
+      <li>
+        CSS
+        <div class="progress-bar4">
+          <span>70%</span>
+        </div>
+      </li>
+      <li>
+        Assembly
+        <div class="progress-bar5">
+          <span>80%</span>
+        </div>
+      </li>
+      <li>
+        C+
+        <div class="progress-bar6">
+          <span>60%</span>
+        </div>
+      </li>
+      <li>
+        Kotlin
+        <div class="progress-bar7">
+          <span>80%</span>
+        </div>
+      </li>
+      <li>
+        PowerPoint
+        <div class="progress-bar8">
+          <span>95%</span>
+        </div>
+      </li>
+      <li>
+        Communication
+        <div class="progress-bar9">
+          <span>95%</span>
+        </div>
+      </li>
+      <li>
+        Suggestive Selling
+        <div class="progress-bar10">
+          <span>90%</span>
+        </div>
+      </li>
+      <li>
+        Leadership
+        <div class="progress-bar11">
+          <span>100%</span>
+        </div>
+      </li>
+      <li>
+        Organization
+        <div class="progress-bar12">
+          <span>90%</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>Professional Experience</h2>
+    <ul>
+      <li>Computer assistant at the Parish Council of Camarate, Unhos and Apelação from 05/2019 to 06/2019</li>
+      <li>Supervisor no Pingo doce de Alcantâra from 2020 to nowadays</li>
+    </ul>
+  </section>
+  <footer>
+    <a href="{% static 'portfolio/images/Curriculo_Dionisio_Miron_EI.pdf'%}" download>Download my CV</a>
+    <p id="author">Dionísio Miron ©, 2023</p>
+  </footer>
+</body>
+
+</html>

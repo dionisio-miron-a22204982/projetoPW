@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+    <link rel="stylesheet" href="{% static '/portfolio/css/estilos.css'%}">
+    <style>
+        div {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <title>IndexLab2</title>
+        <nav>
+            <ul>
+                <li><a href="{% url 'portfolio:indexlab4' %}">🏡Home</a></li> |
+                <li><a href="{% url 'portfolio:local' %}">🗺️Localização</a></li> |
+                <li><a href="{% url 'portfolio:multimedia' %}">📸Multimedia</a></li> |
+                <li><a href="{% url 'portfolio:info' %}">💁‍♂️Informação</a></li> |
+                <li><a href="{% url 'portfolio:quizz' %}">📜Quizz</a></li> |
+                <li><a href="{% url 'portfolio:html5-css' %}">💿HTML5 e CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introdução</h2>
+            <div>Itália</div>
+            <p class="cidade">Cidade maravilhosa no nordeste da itália situada sobre um grupo
+                de 117 pequenas ilhas.
+            </p>
+            <p class="cidade2">Veneza é famosa pela beleza de sua arquitetura e obras de arte.
+                Uma parte da cidade está listada como um Patrimônio Mundial, juntamente com a sua lagoa.
+            </p>
+        </section>
+        <section>
+            <ol>
+                <b>
+                    <li><a href="{% url 'portfolio:local' %}">Conheça a localização de Veneza</a></li>
+                    <li><a href="{% url 'portfolio:info' %}">Sobre Veneza</a></li>
+                    <li><a href="{% url 'portfolio:multimedia' %}">Vídeo da bela Veneza</a></li>
+                </b>
+            </ol>
+        </section>
+        <section>
+            <figure><img src="{% static 'portfolio/images/wordcloudVeneza.jpg'%}" alt="WorldCloud"></figure>
+        </section>
+    </main>
+    <footer><b><p class="author">Dionísio Miron | a22204982 | Universidade Lusófona © 2023</p></b></footer>
+</body>
+
+</html>
