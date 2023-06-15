@@ -36,4 +36,7 @@ urlpatterns = [
     path('animations/', views.animations_view, name="animations"),
     path('tourVeneza/', views.tourveneza_view, name="tourVeneza"),
     path('imagemReponsiva/', views.imagemReponsiva_view, name="imagemReponsiva"),
+    path('calculadora/', views.calculadora_view, name="calculadora"),
+    path('Main/', views.index_view, name="Main"),
+    path('AboutMe/', views.about_me, name="AboutMe"),
 ]

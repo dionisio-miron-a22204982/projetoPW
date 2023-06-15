@@ -13,7 +13,7 @@
 
 <body>
     <nav>
-        <a href="{% url 'portfolio:Menu' %}">Home</a>
+        <a href="{% url 'portfolio:Main' %}">Home</a>
         <a href="{% url 'portfolio:Licenciatura' %}">Education</a>
         <div class="dropdown">
             <button class="dropbtn">
@@ -22,7 +22,7 @@
             </button>
             <div class="dropdown-content">
                 <a href="{% url 'portfolio:LEI' %}">Degree in Computer Engineering</a>
-                <a href="">About my self</a>
+                <a href="{% url 'portfolio:AboutMe' %}">About my self</a>
             </div>
         </div>
         <div class="dropdown">
@@ -34,8 +34,8 @@
                 <a href="{% url 'portfolio:indexlab4' %}">Web Programming</a>
             </div>
         </div>
-        <a href="Calculadora.html">Calculator</a>
-        <a href="Calculadora.html">Calculator</a>
+        <a href="{% url 'portfolio:calculadora' %}">Calculator</a>
+        <a href="Calculadora.html">Blog</a>
     </nav>
 
 </body>
