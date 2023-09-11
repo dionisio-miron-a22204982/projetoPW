@@ -7,6 +7,11 @@
         <b><p>Author - </b>{{ Post.author }}</p>
         <b><p>Conteúdo - </b>{{ Post.conteudo }}</p>
         <b><p>Data Criação- </b>{{ Post.datacriacao }}</p>
+
+        {% if Post.id %}
+            <a href="{% url 'portfolio:edita' post.id %}" class="btn btn-warning btn-sm" style="float: right; margin-right: 10px">Editar</a>
+        {% endif %}
+        
     </div>
     {% endfor %}
 

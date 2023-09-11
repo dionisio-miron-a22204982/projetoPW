@@ -73,6 +73,7 @@ def blog_view(request):
     context = {'posts': Post.objects.all()}
     return render(request, 'portfolio/blog.html', context)
 
+
 def nova_page_view(request):
 
     form = PostForm(request.POST or None)
@@ -83,3 +84,22 @@ def nova_page_view(request):
     context = {'form': form}
 
     return render(request, 'portfolio/nova.html', context)
+
+
+def editar_blog_view(request, post_id):
+
+    post = Post.objects.get(pk=post_id)
+    form = PostForm(request.POST or None, instance=post)
+
+    if form.is_valid():
+        form.save()
+        return redirect('portfolio:posts')
+
+    context = {'form': form}
+    
+    return render(request, 'portfolio/edita.html', context)
+
+
+def apaga_tarefa_view(request, post_id):
+    Post.objects.get(id=post_id).delete()
+    return redirect('portfolio:posts')
