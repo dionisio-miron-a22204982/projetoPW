@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+  }
+
+  nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 1px 6px;
+    text-decoration: none;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 4px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li:hover {
+    background-color: #555;
+}
+
+nav li:first-child {
+    margin-left: 10px;
+    margin-top: 16px;
+}
+  
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(185, 185, 144);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    color: #333;
+  }
+  
+
+  .personal-info {
+    margin-bottom: 20px;
+  }
+  
+  .personal-info h2 {
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .personal-info p {
+    color: #666;
+    font-size: 16px;
+  }
+
+  .social-media {
+    margin-bottom: 20px;
+  }
+  
+  .hobbies h2 {
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .hobbies ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+.hobbies li {
+  display: inline-block;
+  margin-right: 10px;
+}
+  
+.hobbies a {
+  color: #666;
+  text-decoration: none;
+}
+  
+.hobbies a:hover {
+  color: #333;
+}
+
+.footer {
+  text-align: center;
+}
+  
+.footer p {
+    color: #666;
+    font-size: 14px;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: 20%;
+}
+
+.description {
+    flex: 1 1 auto;
+}
+
+.clown {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.Poster {
+  max-width: 500px;
+    margin: 0 auto;
+    background-color: rgb(214, 214, 210);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

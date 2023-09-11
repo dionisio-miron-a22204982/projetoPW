@@ -1,8 +1,12 @@
-{% extends 'Portfolio/base.html' %}
+{% extends 'portfolio/base.html' %}
 
 {% block main %}
-    {% for post in Posts %}
-        <p>{{ post.titulo }}</p>
+    {% for Post in posts %}
+    <div class = "Poster">
+        <b><p>Título - </b>{{ Post.titulo }}</p>
+        <b><p>Author - </b>{{ Post.author }}</p>
+        <b><p>Conteúdo - </b>{{ Post.conteudo }}</p>
+        <b><p>Data Criação- </b>{{ Post.datacriacao }}</p>
+    </div>
     {% endfor %}
-    
 {% endblock %}

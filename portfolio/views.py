@@ -70,5 +70,5 @@ def contacts_view(request):
     return render(request, "portfolio/contacts.html")
 
 def blog_view(request):
-    context = {'portfolio': Post.objects.all()}
+    context = {'posts': Post.objects.all()}
     return render(request, 'portfolio/blog.html', context)
