@@ -6,7 +6,7 @@ from .forms import PostForm
 
 # Create your views here.
 
-def main_view(request):
+def home_page_view(request):
     return render(request, "portfolio/Main.html")
 
 def menu_view(request):
@@ -69,33 +69,6 @@ def tecnologias_view(request):
 def contacts_view(request):
     return render(request, "portfolio/contacts.html")
 
-
-
-def home_page_view(request):
-    context = {'Post': Post.objects.all()}
-    return render(request, 'portfolio/home.html', context)
-
-def novo_post_view(request):
-    form = PostForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-        return redirect('portfolio:home')
-
-    context = {'form': form}
-
-    return render(request, 'portfolio/nova.html', context)
-
-def edita_post_view(request, post_id):
-    post = post.objects.get(id=post_id)
-    form = PostForm(request.POST or None, instance=post)
-
-    if form.is_valid():
-        form.save()
-        return HttpResponseRedirect(reverse('post:home'))
-
-    context = {'form': form, 'post_id': post_id}
-    return render(request, 'portfolio/edita.html', context)
-
-def apaga_post_view(request, post_id):
-    Post.objects.get(id=post_id).delete()
-    return HttpResponseRedirect(reverse('portfolio:home'))
+def blog_view(request):
+    context = {'portfolio': Post.objects.all()}
+    return render(request, 'portfolio/blog.html', context)

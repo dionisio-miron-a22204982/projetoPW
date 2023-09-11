@@ -1,0 +1,8 @@
+{% extends 'Portfolio/base.html' %}
+
+{% block main %}
+    {% for post in Posts %}
+        <p>{{ post.titulo }}</p>
+    {% endfor %}
+    
+{% endblock %}
