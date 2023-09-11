@@ -9,4 +9,7 @@
         <b><p>Data Criação- </b>{{ Post.datacriacao }}</p>
     </div>
     {% endfor %}
+
+    <a class = "botao" href="{% url 'portfolio:nova'%}">Criar novo post</a>
+
 {% endblock %}

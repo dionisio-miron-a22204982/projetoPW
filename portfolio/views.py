@@ -72,3 +72,14 @@ def contacts_view(request):
 def blog_view(request):
     context = {'posts': Post.objects.all()}
     return render(request, 'portfolio/blog.html', context)
+
+def nova_page_view(request):
+
+    form = PostForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('portfolio:posts')
+
+    context = {'form': form}
+
+    return render(request, 'portfolio/nova.html', context)

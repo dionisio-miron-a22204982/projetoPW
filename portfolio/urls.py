@@ -42,4 +42,5 @@ urlpatterns = [
     path('tecnologias', views.tecnologias_view, name="tecnologias"),
     path('contacts', views.contacts_view, name="contacts"),
     path('posts', views.blog_view, name="posts"),
+    path('nova', views.nova_page_view, name="nova"),
 ]

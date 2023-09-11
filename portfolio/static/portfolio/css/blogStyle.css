@@ -142,3 +142,24 @@ nav li:first-child {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #626668;
+    color: #080808;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #9b8967;
+  color: #ffffff;
+  border-color: #9c875a;
+}
