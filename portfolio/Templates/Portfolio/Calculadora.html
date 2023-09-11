@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="icon" type="icon" href="Imagens/IconOficial.png">
-    <link rel="stylesheet" href="{% static '/portfolio/css/CalculatorStyle.css"'%}">
-</head>
-<script>
-    function calculate() {
-        const expression = document.getElementById("expression").value;
-        const result = eval(expression);
-        document.getElementById("result").innerHTML = result;
-    }
-
-    function clearResult() {
-        document.getElementById("result").innerHTML = "";
-    }
-</script>
-
-<header>
-    <nav>
-        <ul>
-            <li><a href="{% url 'portfolio:Menu' %}">🏡Home</a></li> |
-        </ul>
-    </nav>
-</header>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}">
+        <link rel="stylesheet" href="{% static '/portfolio/css/CalculatorStyle.css'%}">
+    </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="expression" placeholder="Digite a expressão">
-        <button onclick="calculate()">Calcular</button>
-        <button onclick="clearResult()">Limpar</button>
-        <div id="result"></div>
+    <div class="calculadora">
+        <div class="display">
+            <input type="text" id="resultado" readonly>
+        </div>
+        <div class="botoes">
+            <button onclick="limpar()">C</button>
+            <button onclick="concatenar('7')">7</button>
+            <button onclick="concatenar('8')">8</button>
+            <button onclick="concatenar('9')">9</button>
+            <button onclick="operacao('+')">+</button>
+            <button onclick="concatenar('4')">4</button>
+            <button onclick="concatenar('5')">5</button>
+            <button onclick="concatenar('6')">6</button>
+            <button onclick="operacao('-')">-</button>
+            <button onclick="concatenar('1')">1</button>
+            <button onclick="concatenar('2')">2</button>
+            <button onclick="concatenar('3')">3</button>
+            <button onclick="operacao('*')">*</button>
+            <button onclick="concatenar('0')">0</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="operacao('/')">/</button>
+        </div>
     </div>
+    <script src="{% static 'calculadora/script.js' %}"></script>
+    <p>Dionísio Miron ©, 2023</p>
 </body>
-<p>Dionísio Miron ©, 2023</p>
 </html>
