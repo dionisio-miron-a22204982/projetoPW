@@ -9,7 +9,7 @@
         <b><p>Data Criação- </b>{{ Post.datacriacao }}</p>
 
         {% if Post.id %}
-            <a href="{% url 'portfolio:edita' Post.id %}">Editar</a>
+            <a class = "botao" href="{% url 'portfolio:edita' Post.id %}">Editar</a>
         {% endif %}
         
     </div>

@@ -1,6 +1,6 @@
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: red;
+    background-color: #beb199;
     height: max-content !important;
   }
   
@@ -42,7 +42,7 @@ body {
   }
   
   nav a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #beb199;
   }
   
   .dropdown-content {
