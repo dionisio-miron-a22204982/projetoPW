@@ -43,6 +43,6 @@ urlpatterns = [
     path('contacts', views.contacts_view, name="contacts"),
     path('posts', views.blog_view, name="posts"),
     path('nova', views.nova_page_view, name="nova"),
-    path('edita/<int:post_id>/', views.editar_blog_view, name="edita"),
-    path('apaga/<int:post_id>/', views.apaga_tarefa_view, name="apaga"),
+    path('edita/<int:post_id>', views.editar_blog_view, name="edita"),
+    path('apaga/<int:post_id>', views.apaga_blog_view, name="apaga"),
 ]

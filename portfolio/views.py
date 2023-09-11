@@ -1,5 +1,5 @@
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from .models import Post
 from .forms import PostForm
@@ -88,18 +88,17 @@ def nova_page_view(request):
 
 def editar_blog_view(request, post_id):
 
-    post = Post.objects.get(pk=post_id)
+    post = Post.objects.get(id=post_id)
     form = PostForm(request.POST or None, instance=post)
 
     if form.is_valid():
         form.save()
-        return redirect('portfolio:posts')
+        return HttpResponseRedirect(reverse('portfolio:posts'))
 
-    context = {'form': form}
-    
+    context = {'form': form, 'post_id': post_id}
     return render(request, 'portfolio/edita.html', context)
 
 
-def apaga_tarefa_view(request, post_id):
+def apaga_blog_view(request, post_id):
     Post.objects.get(id=post_id).delete()
-    return redirect('portfolio:posts')
+    return HttpResponseRedirect(reverse('portfolio:posts'))
