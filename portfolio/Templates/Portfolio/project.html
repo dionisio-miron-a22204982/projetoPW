@@ -2,16 +2,12 @@
 
 {% block main %}
     {% for Project in projects %}
-    <div class = "Project">
+    <div class = "Poster">
         <b><p>Título - </b>{{ Project.titulo }}</p>
         <b><p>Authors - </b>{{ Project.authores }}</p>
         <b><p>Conteúdo - </b>{{ Project.conteudo }}</p>       
         <b><p>Data Criação- </b>{{ Project.datacriacao }}</p>
         <b><p>Link REPO GIT - </b>{{ Project.link }}</p>
-
-        {% if Post.id %}
-            <a class = "botao" href="{% url 'portfolio:edita' Post.id %}">Editar</a>
-        {% endif %}
         
     </div>
     {% endfor %}
