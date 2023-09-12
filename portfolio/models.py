@@ -27,3 +27,13 @@ class Project(models.Model):
     
     def __str__(self):
         return self.titulo[:30]
+    
+class Course(models.Model):
+    titulo = models.CharField(max_length=40)
+    ano = models.CharField(max_length=1)
+    semester = models.CharField(max_length=10)
+    etc = models.CharField(max_length=2)
+
+    
+    def __str__(self):
+        return self.titulo[:30]

@@ -1,7 +1,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
-from .models import Post, Project
+from .models import Post, Project, Course
 from .forms import PostForm
 
 # Create your views here.
@@ -73,7 +73,6 @@ def blog_view(request):
     context = {'posts': Post.objects.all()}
     return render(request, 'portfolio/blog.html', context)
 
-
 def nova_page_view(request):
 
     form = PostForm(request.POST or None)
@@ -84,7 +83,6 @@ def nova_page_view(request):
     context = {'form': form}
 
     return render(request, 'portfolio/nova.html', context)
-
 
 def editar_blog_view(request, post_id):
 
@@ -98,11 +96,17 @@ def editar_blog_view(request, post_id):
     context = {'form': form, 'post_id': post_id}
     return render(request, 'portfolio/edita.html', context)
 
-
 def apaga_blog_view(request, post_id):
     Post.objects.get(id=post_id).delete()
     return HttpResponseRedirect(reverse('portfolio:posts'))
 
+
+
 def project_view(request):
     context = {'projects': Project.objects.all()}
     return render(request, 'portfolio/project.html', context)
+
+
+def course_view(request):
+    context = {'courses': Course.objects.all()}
+    return render(request, 'portfolio/baseCourse.html', context)

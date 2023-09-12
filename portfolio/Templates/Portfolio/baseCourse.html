@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}" />
+    <link rel="stylesheet" href="{% static '/portfolio/css/blogStyle.css'%}">
+</head>
+
+<nav>
+    <ul>
+        <li><a href="{% url 'portfolio:Menu' %}">Menu</a></li>
+    </ul>
+</nav>
+
+<body>
+    <header class = "clown">
+        <h1>List of courses</h1>
+        <p>computer engineering - Universidade Lusófona</p>
+    </header>
+
+    <main class = "container">
+        {% block main %}
+
+        {% endblock %}
+    </main>
+</body>
+<div class="footer">
+    <p>Dionísio Miron ©, 2023</p>
+</div>
+</html>

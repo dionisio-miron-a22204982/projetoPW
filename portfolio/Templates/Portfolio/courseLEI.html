@@ -1,0 +1,13 @@
+{% extends 'portfolio/baseCourse.html' %}
+
+{% block main %}
+    {% for Course in courses %}
+    <div class = "Poster">
+        <b><p>Título - </b>{{ Course.titulo }}</p>
+        <b><p>ano- </b>{{ Course.ano }}</p>
+        <b><p>semestre - </b>{{ Course.semester }}</p>
+        <b><p>etc - </b>{{ Course.etc }}</p>
+    </div>
+    {% endfor %}
+
+{% endblock %}
