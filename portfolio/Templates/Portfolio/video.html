@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses</title>
+    <title>Video</title>
     <link rel="icon" type="icon" href="{% static 'portfolio/images/IconOficial.png'%}" />
     <link rel="stylesheet" href="{% static '/portfolio/css/blogStyle.css'%}">
 </head>
@@ -19,14 +19,15 @@
 
 <body>
     <header class = "clown">
-        <h1>List of courses</h1>
-        <p>computer engineering - Universidade Lusófona</p>
+        <h1>Vídeo</h1>
+        <p>This video is a little tour of my portfolio, enjoy!</p>
     </header>
 
-    <main class = "container">
-        {% block main %}
-
-        {% endblock %}
+    <main>
+        <figure><iframe width="1300" height="700" src="https://www.youtube.com/embed/riZWEoGKyuU"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe></figure>
     </main>
 </body>
 <div class="footer">

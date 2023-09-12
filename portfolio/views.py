@@ -69,6 +69,9 @@ def tecnologias_view(request):
 def contacts_view(request):
     return render(request, "portfolio/contacts.html")
 
+def video_view(request):
+    return render(request, "portfolio/video.html")
+
 def blog_view(request):
     context = {'posts': Post.objects.all()}
     return render(request, 'portfolio/blog.html', context)

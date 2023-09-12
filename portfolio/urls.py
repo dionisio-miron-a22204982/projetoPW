@@ -41,6 +41,7 @@ urlpatterns = [
     path('diagram', views.diagram_view, name="diagram"),
     path('tecnologias', views.tecnologias_view, name="tecnologias"),
     path('contacts', views.contacts_view, name="contacts"),
+    path('video', views.video_view, name="video"),
     path('posts', views.blog_view, name="posts"),
     path('nova', views.nova_page_view, name="nova"),
     path('edita/<int:post_id>', views.editar_blog_view, name="edita"),
