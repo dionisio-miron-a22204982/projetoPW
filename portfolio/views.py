@@ -109,4 +109,4 @@ def project_view(request):
 
 def course_view(request):
     context = {'courses': Course.objects.all()}
-    return render(request, 'portfolio/baseCourse.html', context)
+    return render(request, 'portfolio/courseLEI.html', context)
