@@ -1,6 +1,6 @@
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: #beb199;
+    background-color: #beb199 !important;
     height: max-content !important;
   }
   
