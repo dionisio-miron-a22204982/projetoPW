@@ -1,12 +1,13 @@
 {% extends 'portfolio/baseWorks.html' %}
 
 {% block main %}
-    {% for Post in posts %}
-    <div class = "Poster">
-        <b><p>Título - </b>{{ Post.titulo }}</p>
-        <b><p>Author - </b>{{ Post.author }}</p>
-        <b><p>Conteúdo - </b>{{ Post.conteudo }}</p>
-        <b><p>Data Criação- </b>{{ Post.datacriacao }}</p>
+    {% for Project in projects %}
+    <div class = "Project">
+        <b><p>Título - </b>{{ Project.titulo }}</p>
+        <b><p>Authors - </b>{{ Project.authores }}</p>
+        <b><p>Conteúdo - </b>{{ Project.conteudo }}</p>       
+        <b><p>Data Criação- </b>{{ Project.datacriacao }}</p>
+        <b><p>Link REPO GIT - </b>{{ Project.link }}</p>
 
         {% if Post.id %}
             <a class = "botao" href="{% url 'portfolio:edita' Post.id %}">Editar</a>
@@ -14,7 +15,5 @@
         
     </div>
     {% endfor %}
-
-    <a class = "botao" href="{% url 'portfolio:nova'%}">Criar novo post</a>
 
 {% endblock %}
