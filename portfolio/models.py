@@ -15,3 +15,15 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('post_detail', args=[str(self.id)])
+    
+
+class Project(models.Model):
+    titulo = models.CharField(max_length=30)
+    authores = models.CharField(max_length=40)
+    conteudo = models.CharField(max_length=500)
+    datacriacao = models.DateTimeField(auto_now_add=True)
+    link = models.CharField(max_length=200)
+
+    
+    def __str__(self):
+        return self.titulo[:30]

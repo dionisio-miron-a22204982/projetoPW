@@ -1,7 +1,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
-from .models import Post
+from .models import Post, Project
 from .forms import PostForm
 
 # Create your views here.
@@ -102,3 +102,7 @@ def editar_blog_view(request, post_id):
 def apaga_blog_view(request, post_id):
     Post.objects.get(id=post_id).delete()
     return HttpResponseRedirect(reverse('portfolio:posts'))
+
+def project_view(request):
+    context = {'projects': Project.objects.all()}
+    return render(request, 'portfolio/project.html', context)
